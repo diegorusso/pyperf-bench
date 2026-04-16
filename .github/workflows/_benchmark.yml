@@ -96,6 +96,7 @@ jobs:
     steps:
     - name: Setup environment
       run: |-
+        echo "CPU_AFFINITY=183-191" >> $GITHUB_ENV
         echo "BENCHMARK_MACHINE_NICKNAME=sulaco" >> $GITHUB_ENV
     - name: Checkout benchmarking
       uses: actions/checkout@v4

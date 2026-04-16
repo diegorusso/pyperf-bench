@@ -64,6 +64,9 @@ arch="arm64"
 hostname="sulaco"
 available = true
 
+[runners.sulaco.env]
+CPU_AFFINITY = "183-191"
+
 [publish_mirror]
 skip = true
 
