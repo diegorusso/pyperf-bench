@@ -11,6 +11,8 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 **Key:** 📄: table, 📈: time plot, 🧠: memory plot
 
 <!-- START table -->
+- [Most recent  pystats on main (2faceee)](results/bm-20260416-3.15.0a8%2B-2faceee/bm-20260416-unknown-aarch64-python-2faceeec5c0fb06498a9-3.15.0a8%2B-2faceee-pystats.md)
+- [Most recent PYTHON_UOPS pystats on main (2faceee)](results/bm-20260416-3.15.0a8%2B-2faceee-PYTHON_UOPS/bm-20260416-unknown-aarch64-python-2faceeec5c0fb06498a9-3.15.0a8%2B-2faceee-pystats.md)
 
 ## linux aarch64 (sulaco)
 | date | fork/ref | hash/flags | vs. 3.11.0: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
