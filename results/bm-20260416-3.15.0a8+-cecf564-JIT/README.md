@@ -8,7 +8,7 @@
 - commit merge base: [600f4dbd54bb35f56ecf1430134d2072b0520aa3](https://github.com/python/cpython/commit/600f4dbd54bb35f56ecf1430134d2072b0520aa3)
 - ref: main
 
-## darwin arm64 (jones)
+## unknown arm64 (jones)
 
 - [GitHub Action run](https://github.com/savannahostrowski/pyperf_bench/actions/runs/24518188444)
 - cpu model: missing
