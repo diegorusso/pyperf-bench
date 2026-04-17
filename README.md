@@ -19,6 +19,8 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 | --- | --- | --- | ---: | ---: | ---: | ---: |
 | [2026-04-16](results/bm-20260416-3.15.0a8%2B-2faceee-JIT) | python/2faceeec5c0fb06498a9 | 2faceee (JIT) |  |  |  | 3.237x ↑<br>[📄](results/bm-20260416-3.15.0a8%2B-2faceee-JIT/bm-20260416-sulaco-aarch64-python-2faceeec5c0fb06498a9-3.15.0a8%2B-2faceee-vs-base.md)[📈](results/bm-20260416-3.15.0a8%2B-2faceee-JIT/bm-20260416-sulaco-aarch64-python-2faceeec5c0fb06498a9-3.15.0a8%2B-2faceee-vs-base.svg)[🧠](results/bm-20260416-3.15.0a8%2B-2faceee-JIT/bm-20260416-sulaco-aarch64-python-2faceeec5c0fb06498a9-3.15.0a8%2B-2faceee-vs-base-mem.svg) |
 | [2026-04-16](results/bm-20260416-3.15.0a8%2B-2faceee) | python/2faceeec5c0fb06498a9 | 2faceee |  |  |  |  |
+| [2026-04-16](results/bm-20260416-3.15.0a7%2B-6357698-JIT) | diegorusso/add_gdb_support | 6357698 (JIT) |  |  |  | 1.005x ↑<br>[📄](results/bm-20260416-3.15.0a7%2B-6357698-JIT/bm-20260416-sulaco-aarch64-diegorusso-add_gdb_support-3.15.0a7%2B-6357698-vs-base.md)[📈](results/bm-20260416-3.15.0a7%2B-6357698-JIT/bm-20260416-sulaco-aarch64-diegorusso-add_gdb_support-3.15.0a7%2B-6357698-vs-base.svg)[🧠](results/bm-20260416-3.15.0a7%2B-6357698-JIT/bm-20260416-sulaco-aarch64-diegorusso-add_gdb_support-3.15.0a7%2B-6357698-vs-base-mem.svg) |
+| [2026-03-30](results/bm-20260330-3.15.0a7%2B-76c554b-JIT) | python/76c554bcdf53e84c79a5 | 76c554b (JIT) |  |  |  |  |
 
 
 <!-- END table -->
