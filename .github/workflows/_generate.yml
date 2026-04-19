@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       force:
-        description: Regenerate all of the derived data, even if it already 
+        description: Regenerate all of the derived data, even if it already
           exists
         type: boolean
         default: false
@@ -46,13 +46,11 @@ jobs:
     - name: Install dependencies from PyPI
       run: python -m pip install -r requirements.txt
     - name: Regenerate derived data
-      run: python -m bench_runner generate_results ${{ inputs.force == true && 
-        '--force' || '' }}
+      run: python -m bench_runner generate_results ${{ inputs.force == true && '--force' || '' }}
     - name: Add to repo
       uses: EndBug/add-and-commit@290ea2c423ad77ca9c62ae0f5b224379612c0321 # v10.0.0
       if: ${{ !inputs.dry_run }}
       with:
-        add: "['results', 'README.md', 'RESULTS.md', 'longitudinal.svg', 'longitudinal.json',
-          'configs.svg', 'configs.json', 'memory_long.svg', 'memory_long.json', 'memory_configs.svg',
-          'memory_configs.json']"
+        add: "['results', 'README.md', 'RESULTS.md']"
+        pull: '--rebase --autostash'
         message: Benchmarking results for @${{ github.actor }}
