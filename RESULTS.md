@@ -7,6 +7,7 @@
 ## linux aarch64 (sulaco)
 | date | fork/ref | hash/flags | vs. 3.11.0: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
+| [2026-04-18](results/bm-20260418-3.15.0a8%2B-4b33308-JIT) | python/4b3330813760a3e3c75c | 4b33308 (JIT) |  |  |  | 1.081x ↑<br>[📄](results/bm-20260418-3.15.0a8%2B-4b33308-JIT/bm-20260418-sulaco-aarch64-python-4b3330813760a3e3c75c-3.15.0a8%2B-4b33308-vs-base.md)[📈](results/bm-20260418-3.15.0a8%2B-4b33308-JIT/bm-20260418-sulaco-aarch64-python-4b3330813760a3e3c75c-3.15.0a8%2B-4b33308-vs-base.svg)[🧠](results/bm-20260418-3.15.0a8%2B-4b33308-JIT/bm-20260418-sulaco-aarch64-python-4b3330813760a3e3c75c-3.15.0a8%2B-4b33308-vs-base-mem.svg) |
 | [2026-04-18](results/bm-20260418-3.15.0a8%2B-4b33308) | python/4b3330813760a3e3c75c | 4b33308 |  |  |  |  |
 | [2026-04-17](results/bm-20260417-3.15.0a8%2B-db3e990-JIT) | python/db3e990b98fd12fee1bf | db3e990 (JIT) |  |  |  | 1.067x ↑<br>[📄](results/bm-20260417-3.15.0a8%2B-db3e990-JIT/bm-20260417-sulaco-aarch64-python-db3e990b98fd12fee1bf-3.15.0a8%2B-db3e990-vs-base.md)[📈](results/bm-20260417-3.15.0a8%2B-db3e990-JIT/bm-20260417-sulaco-aarch64-python-db3e990b98fd12fee1bf-3.15.0a8%2B-db3e990-vs-base.svg)[🧠](results/bm-20260417-3.15.0a8%2B-db3e990-JIT/bm-20260417-sulaco-aarch64-python-db3e990b98fd12fee1bf-3.15.0a8%2B-db3e990-vs-base-mem.svg) |
 | [2026-04-17](results/bm-20260417-3.15.0a8%2B-db3e990) | python/db3e990b98fd12fee1bf | db3e990 |  |  |  |  |
