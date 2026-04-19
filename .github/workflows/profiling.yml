@@ -1,0 +1,119 @@
+name: Weekly Profiling
+
+on:
+  schedule:
+    # Every Sunday at 4am UTC
+    - cron: "0 4 * * 0"
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Branch, tag or SHA to profile (default: main)"
+        type: string
+        default: "main"
+
+jobs:
+  determine_head:
+    runs-on: ubuntu-latest
+    outputs:
+      commit: ${{ steps.head.outputs.commit }}
+    steps:
+      - name: Checkout CPython
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+          repository: python/cpython
+          path: cpython
+          ref: ${{ inputs.ref || 'main' }}
+      - name: Determine head commit
+        id: head
+        run: |
+          cd cpython
+          git log -n 1 --format="commit=%H" >> $GITHUB_OUTPUT
+
+  collect-profiling:
+    needs: determine_head
+    runs-on: [self-hosted, linux, bare-metal, linux-arm64-sulaco]
+    timeout-minutes: 1440
+    steps:
+      - name: Setup environment
+        run: |
+          echo "BENCHMARK_MACHINE_NICKNAME=sulaco" >> $GITHUB_ENV
+          echo "BENCH_RUNNER_BRANCH=main" >> $GITHUB_ENV
+
+      - name: Checkout benchmarking
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: git gc
+        run: git gc
+
+      - uses: fregante/setup-git-user@024bc0b8e177d7e77203b48dab6fb45666854b35 # v2.0.2
+
+      - name: Setup system Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: "3.11"
+
+      # Collect JIT profiling
+      - name: Collect JIT profiling
+        run: |
+          python workflow_bootstrap.py python ${{ needs.determine_head.outputs.commit }} linux-arm64-sulaco all ,jit,, --perf --run_id ${{ github.run_id }}
+
+      - name: Upload profiling artifacts
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.0
+        with:
+          name: profiling-jit
+          path: profiling/results
+
+  process-and-commit:
+    needs: [determine_head, collect-profiling]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout benchmarking repo
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Setup Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: "3.11"
+
+      - name: Install bench_runner
+        run: |
+          pip install bench_runner matplotlib numpy
+
+      - name: Download profiling artifacts
+        uses: actions/download-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.0
+        with:
+          name: profiling-jit
+          path: profiling/results
+
+      - name: Generate JIT profiling plots
+        run: |
+          python -m bench_runner profiling_plot profiling/results profiling/jit
+
+      - name: Create README
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          cat > profiling/README.md << EOF
+          # Profiling Results
+
+          **Commit:** ${{ needs.determine_head.outputs.commit }}
+          **Date:** ${DATE}
+
+          ## Configurations
+
+          - [jit](jit.md) - JIT enabled
+
+          ## Visualizations
+
+          ### JIT
+          ![jit](jit.svg)
+          EOF
+
+      - uses: fregante/setup-git-user@024bc0e177d7e77203b48dab6fb45666854b35 # v2.0.2
+
+      - name: Commit profiling results
+        uses: EndBug/add-and-commit@290ea2c423ad77ca9c62ae0f5b224379612c0321 # v10.0.0
+        with:
+          add: profiling
+          pull: '--rebase --autostash'
+          message: "Add profiling data for ${{ needs.determine_head.outputs.commit }}"
