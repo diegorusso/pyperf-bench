@@ -51,7 +51,7 @@ def run_in_venv(
 
 
 def install_requirements(venv: Path) -> None:
-    run_in_venv(venv, "pip", ["install", "--upgrade", "pip"])
+    run_in_venv(venv, "pip", ["install", "--upgrade", "pip", "setuptools", "wheel"])
     run_in_venv(venv, "pip", ["install", "-r", "requirements.txt"])
 
     # To facilitate coverage testing
