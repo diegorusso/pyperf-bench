@@ -51,7 +51,8 @@ def run_in_venv(
 
 
 def install_requirements(venv: Path) -> None:
-    run_in_venv(venv, "pip", ["install", "--upgrade", "pip", "setuptools", "wheel"])
+    # setuptools==81.0.0 because of https://stackoverflow.com/a/79888812/
+    run_in_venv(venv, "pip", ["install", "--upgrade", "pip", "setuptools==81.0.0", "wheel"])
     run_in_venv(venv, "pip", ["install", "-r", "requirements.txt"])
 
     # To facilitate coverage testing
