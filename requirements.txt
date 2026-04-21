@@ -1,2 +1,2 @@
 setuptools==81.0.0
-git+https://github.com/savannahostrowski/bench_runner.git@rpi-fix
+git+https://github.com/diegorusso/bench_runner_savannah.git@rpi-fix
