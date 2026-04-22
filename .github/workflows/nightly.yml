@@ -3,7 +3,7 @@ name: nightly
 
 on:
   schedule:
-  - cron: 0 2 * * *
+  - cron: 45 1 * * *
   workflow_dispatch: {}
 
 jobs:
