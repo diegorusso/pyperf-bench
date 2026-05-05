@@ -23,8 +23,6 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 | [2026-05-02](results/bm-20260502-3.15.0a8%2B-6b632ce) | python/6b632ce36b950c7753c5 | 6b632ce |  |  |  |  |
 | [2026-05-01](results/bm-20260501-3.15.0a8%2B-bb911a2-JIT) | python/bb911a2319365a4155e7 | bb911a2 (JIT) |  |  |  | 1.083x ↑<br>[📄](results/bm-20260501-3.15.0a8%2B-bb911a2-JIT/bm-20260501-sulaco-aarch64-python-bb911a2319365a4155e7-3.15.0a8%2B-bb911a2-vs-base.md)[📈](results/bm-20260501-3.15.0a8%2B-bb911a2-JIT/bm-20260501-sulaco-aarch64-python-bb911a2319365a4155e7-3.15.0a8%2B-bb911a2-vs-base.svg)[🧠](results/bm-20260501-3.15.0a8%2B-bb911a2-JIT/bm-20260501-sulaco-aarch64-python-bb911a2319365a4155e7-3.15.0a8%2B-bb911a2-vs-base-mem.svg) |
 | [2026-05-01](results/bm-20260501-3.15.0a8%2B-bb911a2) | python/bb911a2319365a4155e7 | bb911a2 |  |  |  |  |
-| [2026-04-30](results/bm-20260430-3.15.0a8%2B-c0e0640-JIT) | python/c0e064003954142b4ba8 | c0e0640 (JIT) |  |  |  | 1.079x ↑<br>[📄](results/bm-20260430-3.15.0a8%2B-c0e0640-JIT/bm-20260430-sulaco-aarch64-python-c0e064003954142b4ba8-3.15.0a8%2B-c0e0640-vs-base.md)[📈](results/bm-20260430-3.15.0a8%2B-c0e0640-JIT/bm-20260430-sulaco-aarch64-python-c0e064003954142b4ba8-3.15.0a8%2B-c0e0640-vs-base.svg)[🧠](results/bm-20260430-3.15.0a8%2B-c0e0640-JIT/bm-20260430-sulaco-aarch64-python-c0e064003954142b4ba8-3.15.0a8%2B-c0e0640-vs-base-mem.svg) |
-| [2026-04-30](results/bm-20260430-3.15.0a8%2B-c0e0640) | python/c0e064003954142b4ba8 | c0e0640 |  |  |  |  |
 
 
 <!-- END table -->
