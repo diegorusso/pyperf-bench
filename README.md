@@ -20,8 +20,6 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 | [2026-05-05](results/bm-20260505-3.15.0a8%2B-17975f9) | python/17975f92edd2a6a84549 | 17975f9 |  |  |  |  |
 | [2026-05-03](results/bm-20260503-3.15.0a8%2B-2e94f14-JIT) | python/2e94f14310e8ab62f41d | 2e94f14 (JIT) |  |  |  | 1.074x ↑<br>[📄](results/bm-20260503-3.15.0a8%2B-2e94f14-JIT/bm-20260503-sulaco-aarch64-python-2e94f14310e8ab62f41d-3.15.0a8%2B-2e94f14-vs-base.md)[📈](results/bm-20260503-3.15.0a8%2B-2e94f14-JIT/bm-20260503-sulaco-aarch64-python-2e94f14310e8ab62f41d-3.15.0a8%2B-2e94f14-vs-base.svg)[🧠](results/bm-20260503-3.15.0a8%2B-2e94f14-JIT/bm-20260503-sulaco-aarch64-python-2e94f14310e8ab62f41d-3.15.0a8%2B-2e94f14-vs-base-mem.svg) |
 | [2026-05-03](results/bm-20260503-3.15.0a8%2B-2e94f14) | python/2e94f14310e8ab62f41d | 2e94f14 |  |  |  |  |
-| [2026-05-02](results/bm-20260502-3.15.0a8%2B-6b632ce-JIT) | python/6b632ce36b950c7753c5 | 6b632ce (JIT) |  |  |  | 1.062x ↑<br>[📄](results/bm-20260502-3.15.0a8%2B-6b632ce-JIT/bm-20260502-sulaco-aarch64-python-6b632ce36b950c7753c5-3.15.0a8%2B-6b632ce-vs-base.md)[📈](results/bm-20260502-3.15.0a8%2B-6b632ce-JIT/bm-20260502-sulaco-aarch64-python-6b632ce36b950c7753c5-3.15.0a8%2B-6b632ce-vs-base.svg)[🧠](results/bm-20260502-3.15.0a8%2B-6b632ce-JIT/bm-20260502-sulaco-aarch64-python-6b632ce36b950c7753c5-3.15.0a8%2B-6b632ce-vs-base-mem.svg) |
-| [2026-05-02](results/bm-20260502-3.15.0a8%2B-6b632ce) | python/6b632ce36b950c7753c5 | 6b632ce |  |  |  |  |
 
 
 <!-- END table -->
