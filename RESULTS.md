@@ -1,12 +1,14 @@
 # Benchmark results
 
 <!-- START table -->
-- [Most recent  pystats on main (17975f9)](results/bm-20260505-3.15.0a8%2B-17975f9/bm-20260505-unknown-aarch64-python-17975f92edd2a6a84549-3.15.0a8%2B-17975f9-pystats.md)
-- [Most recent PYTHON_UOPS pystats on main (2e94f14)](results/bm-20260503-3.15.0a8%2B-2e94f14-PYTHON_UOPS/bm-20260503-unknown-aarch64-python-2e94f14310e8ab62f41d-3.15.0a8%2B-2e94f14-pystats.md)
+- [Most recent  pystats on main (49918f5)](results/bm-20260507-3.16.0a0-49918f5/bm-20260507-unknown-aarch64-python-49918f5b0ceb1950c322-3.16.0a0-49918f5-pystats.md)
+- [Most recent PYTHON_UOPS pystats on main (49918f5)](results/bm-20260507-3.16.0a0-49918f5-PYTHON_UOPS/bm-20260507-unknown-aarch64-python-49918f5b0ceb1950c322-3.16.0a0-49918f5-pystats.md)
 
 ## linux aarch64 (sulaco)
 | date | fork/ref | hash/flags | vs. 3.11.0: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
+| [2026-05-07](results/bm-20260507-3.16.0a0-49918f5-JIT) | python/49918f5b0ceb1950c322 | 49918f5 (JIT) |  |  |  | 1.103x ↑<br>[📄](results/bm-20260507-3.16.0a0-49918f5-JIT/bm-20260507-sulaco-aarch64-python-49918f5b0ceb1950c322-3.16.0a0-49918f5-vs-base.md)[📈](results/bm-20260507-3.16.0a0-49918f5-JIT/bm-20260507-sulaco-aarch64-python-49918f5b0ceb1950c322-3.16.0a0-49918f5-vs-base.svg)[🧠](results/bm-20260507-3.16.0a0-49918f5-JIT/bm-20260507-sulaco-aarch64-python-49918f5b0ceb1950c322-3.16.0a0-49918f5-vs-base-mem.svg) |
+| [2026-05-07](results/bm-20260507-3.16.0a0-49918f5) | python/49918f5b0ceb1950c322 | 49918f5 |  |  |  |  |
 | [2026-05-05](results/bm-20260505-3.15.0a8%2B-17975f9) | python/17975f92edd2a6a84549 | 17975f9 |  |  |  |  |
 | [2026-05-03](results/bm-20260503-3.15.0a8%2B-2e94f14-JIT) | python/2e94f14310e8ab62f41d | 2e94f14 (JIT) |  |  |  | 1.074x ↑<br>[📄](results/bm-20260503-3.15.0a8%2B-2e94f14-JIT/bm-20260503-sulaco-aarch64-python-2e94f14310e8ab62f41d-3.15.0a8%2B-2e94f14-vs-base.md)[📈](results/bm-20260503-3.15.0a8%2B-2e94f14-JIT/bm-20260503-sulaco-aarch64-python-2e94f14310e8ab62f41d-3.15.0a8%2B-2e94f14-vs-base.svg)[🧠](results/bm-20260503-3.15.0a8%2B-2e94f14-JIT/bm-20260503-sulaco-aarch64-python-2e94f14310e8ab62f41d-3.15.0a8%2B-2e94f14-vs-base-mem.svg) |
 | [2026-05-03](results/bm-20260503-3.15.0a8%2B-2e94f14) | python/2e94f14310e8ab62f41d | 2e94f14 |  |  |  |  |
