@@ -11,20 +11,20 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 **Key:** 📄: table, 📈: time plot, 🧠: memory plot
 
 <!-- START table -->
-- [Most recent  pystats on main (832bc0b)](results/bm-20260712-3.16.0a0-832bc0b/bm-20260712-unknown-aarch64-python-832bc0b0ea20c2fade5d-3.16.0a0-832bc0b-pystats.md)
-- [Most recent PYTHON_UOPS pystats on main (832bc0b)](results/bm-20260712-3.16.0a0-832bc0b-PYTHON_UOPS/bm-20260712-unknown-aarch64-python-832bc0b0ea20c2fade5d-3.16.0a0-832bc0b-pystats.md)
+- [Most recent  pystats on main (2dc1a91)](results/bm-20260714-3.16.0a0-2dc1a91/bm-20260714-unknown-aarch64-python-2dc1a91af801ea896e21-3.16.0a0-2dc1a91-pystats.md)
+- [Most recent PYTHON_UOPS pystats on main (2dc1a91)](results/bm-20260714-3.16.0a0-2dc1a91-PYTHON_UOPS/bm-20260714-unknown-aarch64-python-2dc1a91af801ea896e21-3.16.0a0-2dc1a91-pystats.md)
 
 ## linux aarch64 (sulaco)
 | date | fork/ref | hash/flags | vs. 3.11.0: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
+| [2026-07-14](results/bm-20260714-3.16.0a0-2dc1a91-JIT) | python/2dc1a91af801ea896e21 | 2dc1a91 (JIT) |  |  |  | 1.080x ↑<br>[📄](results/bm-20260714-3.16.0a0-2dc1a91-JIT/bm-20260714-sulaco-aarch64-python-2dc1a91af801ea896e21-3.16.0a0-2dc1a91-vs-base.md)[📈](results/bm-20260714-3.16.0a0-2dc1a91-JIT/bm-20260714-sulaco-aarch64-python-2dc1a91af801ea896e21-3.16.0a0-2dc1a91-vs-base.svg)[🧠](results/bm-20260714-3.16.0a0-2dc1a91-JIT/bm-20260714-sulaco-aarch64-python-2dc1a91af801ea896e21-3.16.0a0-2dc1a91-vs-base-mem.svg) |
+| [2026-07-14](results/bm-20260714-3.16.0a0-2dc1a91) | python/2dc1a91af801ea896e21 | 2dc1a91 |  |  |  |  |
 | [2026-07-12](results/bm-20260712-3.16.0a0-832bc0b-JIT) | python/832bc0b0ea20c2fade5d | 832bc0b (JIT) |  |  |  | 1.076x ↑<br>[📄](results/bm-20260712-3.16.0a0-832bc0b-JIT/bm-20260712-sulaco-aarch64-python-832bc0b0ea20c2fade5d-3.16.0a0-832bc0b-vs-base.md)[📈](results/bm-20260712-3.16.0a0-832bc0b-JIT/bm-20260712-sulaco-aarch64-python-832bc0b0ea20c2fade5d-3.16.0a0-832bc0b-vs-base.svg)[🧠](results/bm-20260712-3.16.0a0-832bc0b-JIT/bm-20260712-sulaco-aarch64-python-832bc0b0ea20c2fade5d-3.16.0a0-832bc0b-vs-base-mem.svg) |
 | [2026-07-12](results/bm-20260712-3.16.0a0-832bc0b) | python/832bc0b0ea20c2fade5d | 832bc0b |  |  |  |  |
 | [2026-07-11](results/bm-20260711-3.16.0a0-0023d5b-JIT) | python/0023d5b23df09f18425f | 0023d5b (JIT) |  |  |  | 1.079x ↑<br>[📄](results/bm-20260711-3.16.0a0-0023d5b-JIT/bm-20260711-sulaco-aarch64-python-0023d5b23df09f18425f-3.16.0a0-0023d5b-vs-base.md)[📈](results/bm-20260711-3.16.0a0-0023d5b-JIT/bm-20260711-sulaco-aarch64-python-0023d5b23df09f18425f-3.16.0a0-0023d5b-vs-base.svg)[🧠](results/bm-20260711-3.16.0a0-0023d5b-JIT/bm-20260711-sulaco-aarch64-python-0023d5b23df09f18425f-3.16.0a0-0023d5b-vs-base-mem.svg) |
 | [2026-07-11](results/bm-20260711-3.16.0a0-0023d5b) | python/0023d5b23df09f18425f | 0023d5b |  |  |  |  |
 | [2026-07-10](results/bm-20260710-3.16.0a0-c22e9c9-JIT) | python/c22e9c9daef4d97a3fdf | c22e9c9 (JIT) |  |  |  | 1.080x ↑<br>[📄](results/bm-20260710-3.16.0a0-c22e9c9-JIT/bm-20260710-sulaco-aarch64-python-c22e9c9daef4d97a3fdf-3.16.0a0-c22e9c9-vs-base.md)[📈](results/bm-20260710-3.16.0a0-c22e9c9-JIT/bm-20260710-sulaco-aarch64-python-c22e9c9daef4d97a3fdf-3.16.0a0-c22e9c9-vs-base.svg)[🧠](results/bm-20260710-3.16.0a0-c22e9c9-JIT/bm-20260710-sulaco-aarch64-python-c22e9c9daef4d97a3fdf-3.16.0a0-c22e9c9-vs-base-mem.svg) |
 | [2026-07-10](results/bm-20260710-3.16.0a0-c22e9c9) | python/c22e9c9daef4d97a3fdf | c22e9c9 |  |  |  |  |
-| [2026-07-10](results/bm-20260710-3.16.0a0-1b41c7b-JIT) | python/1b41c7b722b77d9c02c6 | 1b41c7b (JIT) |  |  |  | 1.081x ↑<br>[📄](results/bm-20260710-3.16.0a0-1b41c7b-JIT/bm-20260710-sulaco-aarch64-python-1b41c7b722b77d9c02c6-3.16.0a0-1b41c7b-vs-base.md)[📈](results/bm-20260710-3.16.0a0-1b41c7b-JIT/bm-20260710-sulaco-aarch64-python-1b41c7b722b77d9c02c6-3.16.0a0-1b41c7b-vs-base.svg)[🧠](results/bm-20260710-3.16.0a0-1b41c7b-JIT/bm-20260710-sulaco-aarch64-python-1b41c7b722b77d9c02c6-3.16.0a0-1b41c7b-vs-base-mem.svg) |
-| [2026-07-10](results/bm-20260710-3.16.0a0-1b41c7b) | python/1b41c7b722b77d9c02c6 | 1b41c7b |  |  |  |  |
 
 
 <!-- END table -->
