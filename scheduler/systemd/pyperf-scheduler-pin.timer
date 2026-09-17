@@ -1,0 +1,12 @@
+[Unit]
+Description=Pin the daily CPython commit at 23:00 UTC
+
+[Timer]
+OnCalendar=*-*-* 23:00:00 UTC
+AccuracySec=1s
+RandomizedDelaySec=0
+Persistent=true
+Unit=pyperf-scheduler@pin.service
+
+[Install]
+WantedBy=timers.target

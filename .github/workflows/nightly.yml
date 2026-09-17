@@ -1,10 +1,14 @@
 ---
 name: nightly
+run-name: "${{ inputs.scheduler_slot && format('nightly [scheduled {0}]', inputs.scheduler_slot) || 'nightly' }}"
 
 on:
-  schedule:
-  - cron: 45 1 * * *
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      scheduler_slot:
+        description: "UTC occurrence supplied by the external scheduler"
+        type: string
+        required: false
 
 jobs:
   # Determine the base commit of the selected commit. The output is passed to

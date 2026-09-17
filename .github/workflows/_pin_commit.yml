@@ -1,10 +1,14 @@
 ---
 name: _pin_commit
+run-name: "${{ inputs.scheduler_slot && format('_pin_commit [scheduled {0}]', inputs.scheduler_slot) || '_pin_commit' }}"
 
 on:
-  schedule:
-  - cron: "0 23 * * *"  # 3:00 PM PST / 23:00 UTC
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      scheduler_slot:
+        description: "UTC occurrence supplied by the external scheduler"
+        type: string
+        required: false
 
 jobs:
   pin:

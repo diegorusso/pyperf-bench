@@ -1,0 +1,12 @@
+[Unit]
+Description=Dispatch weekly profiling on Sunday at 04:00 UTC
+
+[Timer]
+OnCalendar=Sun *-*-* 04:00:00 UTC
+AccuracySec=1s
+RandomizedDelaySec=0
+Persistent=true
+Unit=pyperf-scheduler@profiling.service
+
+[Install]
+WantedBy=timers.target
