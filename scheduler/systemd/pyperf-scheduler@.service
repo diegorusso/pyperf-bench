@@ -1,0 +1,31 @@
+[Unit]
+Description=Dispatch pyperf-bench %i workflow
+Wants=network-online.target
+After=network-online.target time-sync.target
+StartLimitIntervalSec=600
+StartLimitBurst=3
+
+[Service]
+Type=oneshot
+User=pyperf-scheduler
+Group=pyperf-scheduler
+EnvironmentFile=/etc/pyperf-scheduler/config
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+LoadCredential=github-token:/etc/pyperf-scheduler/github-token
+StateDirectory=pyperf-scheduler
+StateDirectoryMode=0700
+ExecStart=/usr/bin/python3 /usr/local/lib/pyperf-scheduler/dispatch.py %i
+TimeoutStartSec=120
+Restart=on-failure
+RestartSec=60
+# Benchmarks use CPUs 183-191 on sulaco.
+CPUAffinity=0
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
