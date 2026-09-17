@@ -47,14 +47,16 @@ anything accidentally.
 
 ## Cut over
 
-1. Deploy the workflow changes that accept `scheduler_slot` and include it in
-   the run name. Existing GitHub cron triggers can remain active during setup.
-2. Validate the token with a read-only request and check the three timer
-   schedules. Set a future `SCHEDULER_START_AT` before the next pin occurrence,
-   so the first externally dispatched nightly uses a freshly pinned revision.
-3. Remove the three `on.schedule` definitions from GitHub and push that change
-   **before** the chosen cutover time. Do not disable the workflows themselves:
-   they must remain enabled for API dispatch and manual use.
+1. Install the dispatcher and disabled timers, validate the token with a
+   read-only request, and check the three timer schedules. Keep the workflow
+   changes unmerged while preparing the host so GitHub cron continues to run.
+2. Choose a cutover after the current nightly has started and before the next
+   23:00 UTC pin occurrence. Set `SCHEDULER_START_AT` to that cutover time so the
+   first externally dispatched nightly uses a freshly pinned revision.
+3. Merge the workflow changes just before the chosen cutover time. They add
+   `scheduler_slot` to the inputs and run names and remove the three GitHub
+   `on.schedule` definitions. Do not disable the workflows themselves: they
+   must remain enabled for API dispatch and manual use.
 4. Enable the timers:
 
    ```sh

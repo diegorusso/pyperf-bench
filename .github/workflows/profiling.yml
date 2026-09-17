@@ -2,9 +2,6 @@ name: Weekly Profiling
 run-name: "${{ inputs.scheduler_slot && format('Weekly Profiling [scheduled {0}]', inputs.scheduler_slot) || 'Weekly Profiling' }}"
 
 on:
-  schedule:
-    # Every Sunday at 4am UTC
-    - cron: "0 4 * * 0"
   workflow_dispatch:
     inputs:
       scheduler_slot:

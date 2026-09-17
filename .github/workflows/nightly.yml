@@ -3,8 +3,6 @@ name: nightly
 run-name: "${{ inputs.scheduler_slot && format('nightly [scheduled {0}]', inputs.scheduler_slot) || 'nightly' }}"
 
 on:
-  schedule:
-  - cron: 45 1 * * *
   workflow_dispatch:
     inputs:
       scheduler_slot:
