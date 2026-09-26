@@ -1,12 +1,14 @@
 # Benchmark results
 
 <!-- START table -->
-- [Most recent  pystats on main (a5b03fa)](results/bm-20260924-3.16.0a0-a5b03fa/bm-20260924-unknown-aarch64-python-a5b03fa1d71925576892-3.16.0a0-a5b03fa-pystats.md)
-- [Most recent PYTHON_UOPS pystats on main (a5b03fa)](results/bm-20260924-3.16.0a0-a5b03fa-PYTHON_UOPS/bm-20260924-unknown-aarch64-python-a5b03fa1d71925576892-3.16.0a0-a5b03fa-pystats.md)
+- [Most recent  pystats on main (b71989d)](results/bm-20260925-3.16.0a0-b71989d/bm-20260925-unknown-aarch64-python-b71989d65780683dbbcc-3.16.0a0-b71989d-pystats.md)
+- [Most recent PYTHON_UOPS pystats on main (b71989d)](results/bm-20260925-3.16.0a0-b71989d-PYTHON_UOPS/bm-20260925-unknown-aarch64-python-b71989d65780683dbbcc-3.16.0a0-b71989d-pystats.md)
 
 ## linux aarch64 (sulaco)
 | date | fork/ref | hash/flags | vs. 3.11.0: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
+| [2026-09-25](results/bm-20260925-3.16.0a0-b71989d-JIT) | python/b71989d65780683dbbcc | b71989d (JIT) |  |  |  | 1.085x ↑<br>[📄](results/bm-20260925-3.16.0a0-b71989d-JIT/bm-20260925-sulaco-aarch64-python-b71989d65780683dbbcc-3.16.0a0-b71989d-vs-base.md)[📈](results/bm-20260925-3.16.0a0-b71989d-JIT/bm-20260925-sulaco-aarch64-python-b71989d65780683dbbcc-3.16.0a0-b71989d-vs-base.svg)[🧠](results/bm-20260925-3.16.0a0-b71989d-JIT/bm-20260925-sulaco-aarch64-python-b71989d65780683dbbcc-3.16.0a0-b71989d-vs-base-mem.svg) |
+| [2026-09-25](results/bm-20260925-3.16.0a0-b71989d) | python/b71989d65780683dbbcc | b71989d |  |  |  |  |
 | [2026-09-24](results/bm-20260924-3.16.0a0-a5b03fa-JIT) | python/a5b03fa1d71925576892 | a5b03fa (JIT) |  |  |  | 1.087x ↑<br>[📄](results/bm-20260924-3.16.0a0-a5b03fa-JIT/bm-20260924-sulaco-aarch64-python-a5b03fa1d71925576892-3.16.0a0-a5b03fa-vs-base.md)[📈](results/bm-20260924-3.16.0a0-a5b03fa-JIT/bm-20260924-sulaco-aarch64-python-a5b03fa1d71925576892-3.16.0a0-a5b03fa-vs-base.svg)[🧠](results/bm-20260924-3.16.0a0-a5b03fa-JIT/bm-20260924-sulaco-aarch64-python-a5b03fa1d71925576892-3.16.0a0-a5b03fa-vs-base-mem.svg) |
 | [2026-09-24](results/bm-20260924-3.16.0a0-a5b03fa) | python/a5b03fa1d71925576892 | a5b03fa |  |  |  |  |
 | [2026-09-23](results/bm-20260923-3.16.0a0-6893326-JIT) | python/6893326350024d0ed3a6 | 6893326 (JIT) |  |  |  | 1.081x ↑<br>[📄](results/bm-20260923-3.16.0a0-6893326-JIT/bm-20260923-sulaco-aarch64-python-6893326350024d0ed3a6-3.16.0a0-6893326-vs-base.md)[📈](results/bm-20260923-3.16.0a0-6893326-JIT/bm-20260923-sulaco-aarch64-python-6893326350024d0ed3a6-3.16.0a0-6893326-vs-base.svg)[🧠](results/bm-20260923-3.16.0a0-6893326-JIT/bm-20260923-sulaco-aarch64-python-6893326350024d0ed3a6-3.16.0a0-6893326-vs-base-mem.svg) |
