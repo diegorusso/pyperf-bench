@@ -11,20 +11,20 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 **Key:** 📄: table, 📈: time plot, 🧠: memory plot
 
 <!-- START table -->
-- [Most recent  pystats on main (f7c39d2)](results/bm-20261028-3.16.0a1%2Bdev-f7c39d2/bm-20261028-unknown-aarch64-python-f7c39d2316e59f17148d-3.16.0a1%2Bdev-f7c39d2-pystats.md)
-- [Most recent PYTHON_UOPS pystats on main (f7c39d2)](results/bm-20261028-3.16.0a1%2Bdev-f7c39d2-PYTHON_UOPS/bm-20261028-unknown-aarch64-python-f7c39d2316e59f17148d-3.16.0a1%2Bdev-f7c39d2-pystats.md)
+- [Most recent  pystats on main (ef1fce0)](results/bm-20261029-3.16.0a1%2Bdev-ef1fce0/bm-20261029-unknown-aarch64-python-ef1fce0a69a19360643f-3.16.0a1%2Bdev-ef1fce0-pystats.md)
+- [Most recent PYTHON_UOPS pystats on main (ef1fce0)](results/bm-20261029-3.16.0a1%2Bdev-ef1fce0-PYTHON_UOPS/bm-20261029-unknown-aarch64-python-ef1fce0a69a19360643f-3.16.0a1%2Bdev-ef1fce0-pystats.md)
 
 ## linux aarch64 (sulaco)
 | date | fork/ref | hash/flags | vs. 3.11.0: | vs. 3.12.0: | vs. 3.13.0: | vs. base: |
 | --- | --- | --- | ---: | ---: | ---: | ---: |
+| [2026-10-29](results/bm-20261029-3.16.0a1%2Bdev-ef1fce0-JIT) | python/ef1fce0a69a19360643f | ef1fce0 (JIT) |  |  |  | 1.096x ↑<br>[📄](results/bm-20261029-3.16.0a1%2Bdev-ef1fce0-JIT/bm-20261029-sulaco-aarch64-python-ef1fce0a69a19360643f-3.16.0a1%2Bdev-ef1fce0-vs-base.md)[📈](results/bm-20261029-3.16.0a1%2Bdev-ef1fce0-JIT/bm-20261029-sulaco-aarch64-python-ef1fce0a69a19360643f-3.16.0a1%2Bdev-ef1fce0-vs-base.svg)[🧠](results/bm-20261029-3.16.0a1%2Bdev-ef1fce0-JIT/bm-20261029-sulaco-aarch64-python-ef1fce0a69a19360643f-3.16.0a1%2Bdev-ef1fce0-vs-base-mem.svg) |
+| [2026-10-29](results/bm-20261029-3.16.0a1%2Bdev-ef1fce0) | python/ef1fce0a69a19360643f | ef1fce0 |  |  |  |  |
 | [2026-10-28](results/bm-20261028-3.16.0a1%2Bdev-f7c39d2-JIT) | python/f7c39d2316e59f17148d | f7c39d2 (JIT) |  |  |  | 1.098x ↑<br>[📄](results/bm-20261028-3.16.0a1%2Bdev-f7c39d2-JIT/bm-20261028-sulaco-aarch64-python-f7c39d2316e59f17148d-3.16.0a1%2Bdev-f7c39d2-vs-base.md)[📈](results/bm-20261028-3.16.0a1%2Bdev-f7c39d2-JIT/bm-20261028-sulaco-aarch64-python-f7c39d2316e59f17148d-3.16.0a1%2Bdev-f7c39d2-vs-base.svg)[🧠](results/bm-20261028-3.16.0a1%2Bdev-f7c39d2-JIT/bm-20261028-sulaco-aarch64-python-f7c39d2316e59f17148d-3.16.0a1%2Bdev-f7c39d2-vs-base-mem.svg) |
 | [2026-10-28](results/bm-20261028-3.16.0a1%2Bdev-f7c39d2) | python/f7c39d2316e59f17148d | f7c39d2 |  |  |  |  |
 | [2026-10-27](results/bm-20261027-3.16.0a1%2Bdev-6c695bf-JIT) | python/6c695bfad45ddde73d0d | 6c695bf (JIT) |  |  |  | 1.094x ↑<br>[📄](results/bm-20261027-3.16.0a1%2Bdev-6c695bf-JIT/bm-20261027-sulaco-aarch64-python-6c695bfad45ddde73d0d-3.16.0a1%2Bdev-6c695bf-vs-base.md)[📈](results/bm-20261027-3.16.0a1%2Bdev-6c695bf-JIT/bm-20261027-sulaco-aarch64-python-6c695bfad45ddde73d0d-3.16.0a1%2Bdev-6c695bf-vs-base.svg)[🧠](results/bm-20261027-3.16.0a1%2Bdev-6c695bf-JIT/bm-20261027-sulaco-aarch64-python-6c695bfad45ddde73d0d-3.16.0a1%2Bdev-6c695bf-vs-base-mem.svg) |
 | [2026-10-27](results/bm-20261027-3.16.0a1%2Bdev-6c695bf) | python/6c695bfad45ddde73d0d | 6c695bf |  |  |  |  |
 | [2026-10-26](results/bm-20261026-3.16.0a1%2Bdev-0e35313-JIT) | python/0e353134844fd50628f3 | 0e35313 (JIT) |  |  |  | 1.090x ↑<br>[📄](results/bm-20261026-3.16.0a1%2Bdev-0e35313-JIT/bm-20261026-sulaco-aarch64-python-0e353134844fd50628f3-3.16.0a1%2Bdev-0e35313-vs-base.md)[📈](results/bm-20261026-3.16.0a1%2Bdev-0e35313-JIT/bm-20261026-sulaco-aarch64-python-0e353134844fd50628f3-3.16.0a1%2Bdev-0e35313-vs-base.svg)[🧠](results/bm-20261026-3.16.0a1%2Bdev-0e35313-JIT/bm-20261026-sulaco-aarch64-python-0e353134844fd50628f3-3.16.0a1%2Bdev-0e35313-vs-base-mem.svg) |
 | [2026-10-26](results/bm-20261026-3.16.0a1%2Bdev-0e35313) | python/0e353134844fd50628f3 | 0e35313 |  |  |  |  |
-| [2026-10-25](results/bm-20261025-3.16.0a1%2Bdev-7b12a41-JIT) | python/7b12a415c85d88eeb22a | 7b12a41 (JIT) |  |  |  | 1.100x ↑<br>[📄](results/bm-20261025-3.16.0a1%2Bdev-7b12a41-JIT/bm-20261025-sulaco-aarch64-python-7b12a415c85d88eeb22a-3.16.0a1%2Bdev-7b12a41-vs-base.md)[📈](results/bm-20261025-3.16.0a1%2Bdev-7b12a41-JIT/bm-20261025-sulaco-aarch64-python-7b12a415c85d88eeb22a-3.16.0a1%2Bdev-7b12a41-vs-base.svg)[🧠](results/bm-20261025-3.16.0a1%2Bdev-7b12a41-JIT/bm-20261025-sulaco-aarch64-python-7b12a415c85d88eeb22a-3.16.0a1%2Bdev-7b12a41-vs-base-mem.svg) |
-| [2026-10-25](results/bm-20261025-3.16.0a1%2Bdev-7b12a41) | python/7b12a415c85d88eeb22a | 7b12a41 |  |  |  |  |
 
 
 <!-- END table -->
