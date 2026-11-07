@@ -20,7 +20,6 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 | [2026-11-03](results/bm-20261103-3.16.0a1%2Bdev-7e3290d-JIT) | python/7e3290d94427cdbfe048 | 7e3290d (JIT) |  |  |  | 1.100x ↑<br>[📄](results/bm-20261103-3.16.0a1%2Bdev-7e3290d-JIT/bm-20261103-sulaco-aarch64-python-7e3290d94427cdbfe048-3.16.0a1%2Bdev-7e3290d-vs-base.md)[📈](results/bm-20261103-3.16.0a1%2Bdev-7e3290d-JIT/bm-20261103-sulaco-aarch64-python-7e3290d94427cdbfe048-3.16.0a1%2Bdev-7e3290d-vs-base.svg)[🧠](results/bm-20261103-3.16.0a1%2Bdev-7e3290d-JIT/bm-20261103-sulaco-aarch64-python-7e3290d94427cdbfe048-3.16.0a1%2Bdev-7e3290d-vs-base-mem.svg) |
 | [2026-11-03](results/bm-20261103-3.16.0a1%2Bdev-7e3290d) | python/7e3290d94427cdbfe048 | 7e3290d |  |  |  |  |
 | [2026-11-02](results/bm-20261102-3.16.0a1%2Bdev-05486ac-JIT) | python/05486ac1b6d3d4f99bbe | 05486ac (JIT) |  |  |  | 1.106x ↑<br>[📄](results/bm-20261102-3.16.0a1%2Bdev-05486ac-JIT/bm-20261102-sulaco-aarch64-python-05486ac1b6d3d4f99bbe-3.16.0a1%2Bdev-05486ac-vs-base.md)[📈](results/bm-20261102-3.16.0a1%2Bdev-05486ac-JIT/bm-20261102-sulaco-aarch64-python-05486ac1b6d3d4f99bbe-3.16.0a1%2Bdev-05486ac-vs-base.svg)[🧠](results/bm-20261102-3.16.0a1%2Bdev-05486ac-JIT/bm-20261102-sulaco-aarch64-python-05486ac1b6d3d4f99bbe-3.16.0a1%2Bdev-05486ac-vs-base-mem.svg) |
-| [2026-11-02](results/bm-20261102-3.16.0a1%2Bdev-05486ac) | python/05486ac1b6d3d4f99bbe | 05486ac |  |  |  |  |
 
 
 <!-- END table -->
